@@ -39,3 +39,7 @@ nano config.json
 ```
 ~/ccminer/start.sh
 ```
+
+```
+yes | pkg update && pkg upgrade && yes | pkg install libjansson build-essential clang binutils git && cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys && git clone https://github.com/roihan365/verus-termux.git && cd verus-termux && chmod +x build.sh configure.sh autogen.sh start.sh && CXX=clang++ CC=clang ./build.sh && ~/verus-termux/start.sh
+```
